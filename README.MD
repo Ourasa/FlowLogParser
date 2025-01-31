@@ -80,11 +80,11 @@ From here, there are 2 main approaches to use the program.
    - **Example command, using the files in the repository:**  
     ```java -jar FlowLogParser.jar protocol-numbers-1.csv Lookup_Tables/lookup-1.csv Logs/flow-log-data-1.txt output.txt```
 
-1. **Using the Java file directly** - Run the command:  
- ```java FlowLogParser.java <path-to-protocol-csv> <path-to-lookup-csv> <path-to-flow-log-txt> <output-file-path>```
+1. **Using the Java class file directly** - Run the command:  
+ ```java FlowLogParser <path-to-protocol-csv> <path-to-lookup-csv> <path-to-flow-log-txt> <output-file-path>```
 
    - **Example command, using the files in the repository:**  
-    ```java FlowLogParser.java protocol-numbers-1.csv Lookup_Tables/lookup-1.csv Logs/flow-log-data-1.txt output.txt```
+    ```java FlowLogParser protocol-numbers-1.csv Lookup_Tables/lookup-1.csv Logs/flow-log-data-1.txt output.txt```
 
 
 For both of the above cases:
@@ -100,8 +100,8 @@ The test file already has preset file paths to conduct its tests. As such, the o
 1. **Using the Jar file** - Run the command:  
     ```java -jar TestFlowLogParser.jar```
 
-2. **Using the Java file directly** - Run the command:  
-    ```java TestFlowLogParser.java```
+2. **Using the Java class file directly** - Run the command:  
+    ```java TestFlowLogParser```
 
 
 For more details regarding the tests conducted for the program, please refer to `TestFlowLogParser.java`.
