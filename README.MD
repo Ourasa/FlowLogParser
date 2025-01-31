@@ -74,16 +74,17 @@ Then, using your terminal, navigate into the folder that contains these files.
 
 From here, there are 2 main approaches to use the program.
 
-1. **Using the Jar file** - Run the command:  
+1. **Using the Jar file** - This requires an up-to-date Java Runtime. Run the command:  
 ```java -jar FlowLogParser.jar <path-to-protocol-csv> <path-to-lookup-csv> <path-to-flow-log-txt> <output-file-path>```
 
    - **Example command, using the files in the repository:**  
     ```java -jar FlowLogParser.jar protocol-numbers-1.csv Lookup_Tables/lookup-1.csv Logs/flow-log-data-1.txt output.txt```
 
-1. **Using the Java class file directly** - Run the command:  
+1. **Using the Java class file directly** - Run the commands:
+ ```javac *.java```  
  ```java FlowLogParser <path-to-protocol-csv> <path-to-lookup-csv> <path-to-flow-log-txt> <output-file-path>```
 
-   - **Example command, using the files in the repository:**  
+   - **Example command after compiling with javac, using the files in the repository:**  
     ```java FlowLogParser protocol-numbers-1.csv Lookup_Tables/lookup-1.csv Logs/flow-log-data-1.txt output.txt```
 
 
@@ -97,10 +98,11 @@ For both of the above cases:
 ## How to run the test file
 The test file already has preset file paths to conduct its tests. As such, the only thing that needs to be done is to call it to run, no arguments needed. 
 
-1. **Using the Jar file** - Run the command:  
+1. **Using the Jar file** - This requires an up-to-date Java Runtime. Run the command:  
     ```java -jar TestFlowLogParser.jar```
 
-2. **Using the Java class file directly** - Run the command:  
+2. **Using the Java class file directly** - Run the commands:  
+    ```javac *.java```
     ```java TestFlowLogParser```
 
 
